@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopnix Onboarding Wizard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center mb-4" style="color:#ff6600;">Shopnix Onboarding</h2>
+
+  <!-- Step 1 -->
+  <div class="wizard-step active" id="step1">
+    <h4 class="step-title">Step 1: Select a Theme</h4>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card theme-card p-3">
+          <img src="images/theme1.jpg" class="card-img-top" alt="Theme 1">
+          <div class="card-body text-center">Theme 1</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card theme-card p-3">
+          <img src="images/theme2.jpg" class="card-img-top" alt="Theme 2">
+          <div class="card-body text-center">Theme 2</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card theme-card p-3">
+          <img src="images/theme3.jpg" class="card-img-top" alt="Theme 3">
+          <div class="card-body text-center">Theme 3</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-end mt-4">
+      <button class="btn btn-orange" id="next1">Next</button>
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="wizard-step" id="step2">
+    <h4 class="step-title">Step 2: Add Product Type & Category</h4>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Product Type</label>
+        <input type="text" class="form-control" placeholder="e.g., Clothing, Electronics">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Category</label>
+        <input type="text" class="form-control" placeholder="e.g., Men's Wear, Mobiles">
+      </div>
+    </form>
+    <div class="d-flex justify-content-between mt-4">
+      <button class="btn btn-secondary" id="prev2">Back</button>
+      <button class="btn btn-orange" id="next2">Next</button>
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="wizard-step" id="step3">
+    <h4 class="step-title">Step 3: Pricing & Additional Info</h4>
+    <div class="scroll-box mb-3">
+      <p><strong>Plan A:</strong> ₹999/month - Basic features for small stores.</p>
+      <p><strong>Plan B:</strong> ₹1999/month - Standard features + analytics.</p>
+      <p><strong>Plan C:</strong> ₹2999/month - All features + premium support.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat sem ut nisi sodales, a tempor nulla bibendum.</p>
+      <p>Aliquam erat volutpat. Sed gravida libero sed orci placerat, nec ullamcorper sapien dictum.</p>
+      <p>More details about the plans and services...</p>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Additional Information</label>
+      <textarea class="form-control" rows="3" placeholder="Enter any extra details here..."></textarea>
+    </div>
+    <div class="d-flex justify-content-between mt-4">
+      <button class="btn btn-secondary" id="prev3">Back</button>
+      <button class="btn btn-orange">Finish</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

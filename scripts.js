@@ -1,0 +1,18 @@
+$(document).ready(function(){
+  $("#next1").click(function(){
+    $("#step1").removeClass("active");
+    $("#step2").addClass("active");
+  });
+  $("#next2").click(function(){
+    $("#step2").removeClass("active");
+    $("#step3").addClass("active");
+  });
+  $("#prev2").click(function(){
+    $("#step2").removeClass("active");
+    $("#step1").addClass("active");
+  });
+  $("#prev3").click(function(){
+    $("#step3").removeClass("active");
+    $("#step2").addClass("active");
+  });
+});
